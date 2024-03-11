@@ -20,6 +20,6 @@ FROM vacancies
 WHERE salary_from > (SELECT AVG(salary_from) FROM vacancies)
 
 -- Получает список всех вакансий, в названии которых содержатся переданные в метод слово keyword
-SELECT vacancy_name
+SELECT vacancy_name, vacancy_employer_name
 FROM vacancies
 WHERE vacancy_name LIKE '%Python%' OR vacancy_name LIKE '%python%'

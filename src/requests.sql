@@ -11,7 +11,7 @@ JOIN employers ON vacancies.vacancy_employer=employers.employer_id
 
 
 -- Получает среднюю стартовую зарплату по вакансиям
-SELECT AVG(salary_from) as avg_salary
+SELECT ROUND(AVG(salary_from), 2) as avg_salary
 FROM vacancies
 
 -- Получает список всех вакансий, у которых стартовая зарплата выше средней стартовой по всем вакансиям

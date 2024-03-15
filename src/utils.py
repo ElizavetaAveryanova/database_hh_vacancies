@@ -127,3 +127,13 @@ def insert_vacancies_data(cur, vacancies: list[dict]) -> None:
             """,
             (vac["vacancy_id"], vac["title"], vac["url"], vac["employer"], vac["employer_name"], vac["salary_from"], vac["salary_to"])
         )
+
+
+# if __name__ == '__main__':
+#     employers = get_employers()
+#     if employers:
+#         print(employers)
+#
+#     vacancies = get_vacancies()
+#     if vacancies:
+#         print(vacancies)
